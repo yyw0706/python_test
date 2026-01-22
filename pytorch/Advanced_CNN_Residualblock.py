@@ -40,6 +40,7 @@ class ResidualBlock(torch.nn.Module):
         y = F.relu(self.conv1(x))
         y = self.conv2(y)
         z = 123
+        p = 666
         return F.relu(x + y)
 
 
