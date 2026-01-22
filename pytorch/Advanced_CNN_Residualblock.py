@@ -39,13 +39,6 @@ class ResidualBlock(torch.nn.Module):
     def forward(self, x):
         y = F.relu(self.conv1(x))
         y = self.conv2(y)
-        z = 123
-        p = 666
-        dev = 1123
-        dea = 1654
-        deb = 156456
-        x = 78978798789
-        ddd = 200
         return F.relu(x + y)
 
 
